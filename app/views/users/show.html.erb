@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @user.uid %>
+</p>
+
+<p>
+  <strong>登录名:</strong>
+  <%= @user.loginname %>
+</p>
+
+<p>
+  <strong>密码:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>昵称:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>性别:</strong>
+  <%= @user.sex %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>个人描述:</strong>
+  <%= @user.description %>
+</p>
+
+<p>
+  <strong>经验ID:</strong>
+  <%= @user.expid %>
+</p>
+
+<p>
+  <strong>绑定QQ:</strong>
+  <%= @user.bandqq %>
+</p>
+
+<p>
+  <strong>绑定微信:</strong>
+  <%= @user.bandwechat %>
+</p>
+
+<p>
+  <strong>头像路径:</strong>
+  <%= @user.imagepath %>
+</p>
+
+<%= link_to '编辑', edit_user_path(@user) %> |
+<%= link_to '返回', users_path %>

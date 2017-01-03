@@ -1,0 +1,72 @@
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :uid %>
+    <%= f.text_field :uid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :登录名 %>
+    <%= f.text_field :loginname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :密码 %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :昵称 %>
+    <%= f.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= f.label :性别 %>
+    <%= f.text_field :sex %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :个人描述 %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :经验ID %>
+    <%= f.text_field :expid %>
+  </div>
+
+  <div class="field">
+    <%= f.label :绑定QQ %>
+    <%= f.text_field :bandqq %>
+  </div>
+
+  <div class="field">
+    <%= f.label :绑定微信 %>
+    <%= f.text_field :bandwechat %>
+  </div>
+
+  <div class="field">
+    <%= f.label :头像路径 %>
+    <%= f.text_field :imagepath %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
